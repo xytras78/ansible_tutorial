@@ -9,12 +9,12 @@
     apt:
       update_cache: yes
 
-  - name: Install apache2 package
+  - name: Remove apache2 package
     apt:
       name: apache2
-      state: latest
+      state: absent
 
-  - name: Add PHP support for apache2
+  - name: Remove PHP support for apache2
     apt:
       name: libapache2-mod-php
-      state: latest
+      state: absent
